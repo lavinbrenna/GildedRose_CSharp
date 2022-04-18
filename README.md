@@ -2,7 +2,7 @@
 
 #### By Brenna Lavin
 
-##### This app is a refactor of the Gilded Rose Kata for a technical interview!
+##### This app is a refactor of the Gilded Rose Kata for a technical interview
 
 ### Technologies Used
 
