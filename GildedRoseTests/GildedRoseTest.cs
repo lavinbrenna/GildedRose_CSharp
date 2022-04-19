@@ -6,14 +6,14 @@ namespace GildedRoseTests
 {
     public class GildedRoseTest
     {
-        [Fact]
-        public void foo()
-        {
-            IList<Item> Items = new List<Item> { new Item { Name = "foo", SellIn = 0, Quality = 0 } };
-            GildedRose app = new GildedRose(Items);
-            app.UpdateQuality();
-            Assert.Equal("foo", Items[0].Name);
-        }
+        // [Fact]
+        // public void foo()
+        // {
+        //     IList<Item> Items = new List<Item> { new Item { Name = "fixme", SellIn = 0, Quality = 0 } };
+        //     GildedRose app = new GildedRose(Items);
+        //     app.UpdateQuality();
+        //     Assert.Equal("foo", Items[0].Name);
+        // }
         [Fact]
         public void FooQuality_DoesNotReturnNegative()
         {
@@ -53,11 +53,11 @@ namespace GildedRoseTests
         {
             IList<Item> Items = new List<Item>
             {
-                new Item {Name = "Conjured Mana", SellIn = 1, Quality = 49}
+                new Item {Name = "Conjured Mana", SellIn = -1, Quality = 49}
             };
             GildedRose app = new GildedRose(Items);
             app.UpdateQuality();
-            Assert.Equal(47, Items[0].Quality);
+            Assert.Equal(45, Items[0].Quality);
         }
 
         [Fact]

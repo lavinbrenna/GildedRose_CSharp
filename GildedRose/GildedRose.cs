@@ -39,7 +39,7 @@ namespace GildedRoseKata
                                 item.Quality = 50;
                             }
                         }
-                        else if(item.SellIn <= 5 && item.SellIn > 0)
+                        else if(item.SellIn <= 5 && item.SellIn >= 0)
                         {
                             item.Quality += 3;
                             if(item.Quality + 3 > 50)
